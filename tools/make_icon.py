@@ -1,5 +1,7 @@
 # Erzeugt src/Krach/Assets/krach.ico (wird vom Build-Workflow aufgerufen)
+import os
 from PIL import Image, ImageDraw
+os.makedirs("src/Krach/Assets", exist_ok=True)
 S = 512
 img = Image.new("RGBA", (S, S), (0, 0, 0, 0))
 grad = Image.new("RGBA", (S, S))
